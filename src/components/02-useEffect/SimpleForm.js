@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./effects.css";
+import Message from "./Message";
 const SimpleForm = () => {
   const [formState, setFormState] = useState({
     name: "",
@@ -20,7 +21,7 @@ const SimpleForm = () => {
   // Pendiente del email
   useEffect(() => {
     console.log('Email cambió: ' , formState.email);
-  }, [formState]);
+  }, [email]);
 
 
   const handleInputChange = (e) => {
@@ -54,6 +55,8 @@ const SimpleForm = () => {
           value={email}
         />
       </div>
+
+      {(name == 123) && <Message />}
     </>
   );
 };

@@ -4,12 +4,12 @@ const useCounter = (initialState = 10) => {
   // Por defecto es 10, si no recibe nada
   const [state, setState] = useState(initialState);
 
-  const increment = (factor = 1) => {
+  const increment = () => {
     // Por defecto es 1, si no recibe nada
-    setState(state + factor);
+    setState(state + 1);
   };
-  const decrement = (factor = 1) => {
-    setState(state - factor);
+  const decrement = () => {
+    setState(state - 1);
   };
   const reset = () => {
     setState(initialState);

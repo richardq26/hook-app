@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { TodoApp } from "./components/08-useReducer/TodoApp";
+//import { TodoApp } from "./components/08-useReducer/TodoApp";
 // import HookApp from "./HookApp";
 //import CounterApp from "./components/01-useState/CounterApp";
 //import CounterWithCustomHook from "./components/01-useState/CounterWithCustomHook";
@@ -14,12 +14,12 @@ import { TodoApp } from "./components/08-useReducer/TodoApp";
 //import { MemoHook } from "./components/06-memos/MemoHook";
 //import { CallbackHook } from "./components/06-memos/CallbackHook";
 //import { Padre } from "./components/07-tarea-memo/Padre";
-
+import { MainApp } from './components/09-useContext/MainApp';
 function App() {
   return (
     <>
-      <img src={logo} className="App-logo" alt="logo" />
-      <TodoApp />
+      {/*<img src={logo} className="App-logo" alt="logo" /> */}
+      <MainApp />
     </>
   );
 }
